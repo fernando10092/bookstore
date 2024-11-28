@@ -1,0 +1,13 @@
+pip install poetry
+pip install black
+poetry init   > em Dependencias instale o pytest e factory-boy / ou poetry add pytest / poetry add factory-boy
+poetry add django
+poetry run django-admin startproject bookstore .
+poetry run python manage.py startapp api
+poetry run python manage.py migrate
+poetry run python manage.py runserver
+poetry add djangorestframework
+poetry update
+
+>no arquivo settings.py adicione 'rest_framework' em INSTALLED_APPS
+poetry run python manage.py runserver
