@@ -48,3 +48,9 @@ Docker && docker-compose
 
 
 
+//DOCKER
+docker build -t bookstore:latest .
+docker run -p 8000:8000 bookstore:latest
+docker run --name bookstore -d -p 8000:8000 bookstore:latest
+docker-compose up --build
+
